@@ -5,7 +5,7 @@ let word = "arya";
 // console.log(word.charAt(2)); // y
 // console.log(word.charAt(0).toUpperCase()+word.slice(1)); // Arya
 // console.log(word.slice(0,2)); // ar
-// console.log(word.slice(-3, -1)); // ya
+// console.log(word.slice(-3, -1)); // ry
 
 
 let str = "hello";
