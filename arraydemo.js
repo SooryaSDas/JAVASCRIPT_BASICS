@@ -24,11 +24,11 @@ let num =[10,20,30,40,50];
 
 // console.log(num.splice(2, 1, 30), num) // [ 30 ] [ 10, 20, 30, 40, 50 ] - it calculate from start of the arry and start with 1 and remove the next 1 elements and add new element at that index
 // console.log(num.splice(5, 0, 60), num); // [] [ 10, 20, 30, 40, 50, 60 ]
-// console.log(num.splice(2,1,80, 90, 100), num); // [ 30 ] [ 10, 20, 80, 90, 100, 40, 50 ] - it calculate from start of the arry and start with 1 and remove the next 1 elements and add new element at that index
+console.log(num.splice(2,1,80, 90, 100), num); // [ 30 ] [ 10, 20, 80, 90, 100, 40, 50 ] - it calculate from start of the arry and start with 1 and remove the next 1 elements and add new element at that index
 // console.log(num.splice(2,0,5),num); // [] [ 10, 5, 20, 30, 40, 50 ]
 // console.log(num.splice(1,0,3),num) // [] [ 10, 3, 20, 30, 40, 50 ]
-console.log(num.splice(0,1,1), num) // [ 10 ] [ 1, 20, 30, 40, 50 ]
-console.log(num.splice((2,1),num))
+// console.log(num.splice(0,1,1), num) // [ 10 ] [ 1, 20, 30, 40, 50 ]
+console.log(num.splice(1,1,80),num);// [ 20 ] [ 10, 80, 30, 40, 50 ]
 
 
 
