@@ -31,8 +31,16 @@ let num =[10,20,30,40,50];
 // console.log(num.splice(1,1,80),num);// [ 20 ] [ 10, 80, 30, 40, 50 ]
 
 
+for(let i=0; i<num.length; i++){
+    console.log(num[i]);
+}
 
 // const fruits = ["Apple", "Orange"];
 
 // fruits.splice(1, 0, "Banana");
 // console.log(fruits);
+
+// multidimensional array
+const tickets = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
+tickets[1][1] = 1;
+console.log(tickets); // [ [ 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 0 ] ] 
