@@ -34,8 +34,9 @@ let fruitLog = fruits.forEach((fruitess, index, array)=>{
 
 const freshfruits = ["Apple", "Banana", "Orange", "Mango"];
 
+// print all elements of the array with their index using forEach method
 freshfruits.forEach((fruits,index)=>{
-    console.log(fruits, index) 
+    // console.log(fruits, index) 
 })
                             // Apple 0
                             // Banana 1
@@ -43,3 +44,11 @@ freshfruits.forEach((fruits,index)=>{
                             // Mango 3
 
 
+// Print square of each number
+const nums = [2, 4, 6, 8];
+nums.forEach((num) => console.log(num * num));
+
+
+// Print only even numbers
+const nums = [11, 20, 15, 40, 7, 60];
+nums.forEach((num)=> console.log(num %2 == 0 ? num : '')) // 20 40 60
