@@ -67,13 +67,24 @@ freshfruits.forEach((fruits, index) => {
 // findsum(); // 100
 
 // Find the average
-const marks = [70, 80, 90, 100];
-function findAverage() {
-  let total = 0;
-  marks.forEach((mark) => {
-    total += mark;
-  });
-  let average = total / marks.length;
-  console.log(average);
-}
-findAverage();
+// const marks = [70, 80, 90, 100];
+// function findAverage() {
+//   let total = 0;
+//   marks.forEach((mark) => {
+//     total += mark;
+//   });
+//   let average = total / marks.length;
+//   console.log(average);
+// }
+// findAverage();
+
+// Count positive numbers
+const nums = [-5, 8, -10, 15, 25, -2];
+
+let count = 0;
+nums.forEach((nums) => {
+  if (nums > 0) {
+    count++;
+  }
+});
+console.log(count);
