@@ -98,12 +98,24 @@ freshfruits.forEach((fruits, index) => {
 // --------------------------------------------------------
 
 // Count vowels in an array
-const letters = ["a", "b", "e", "g", "i", "k", "o"];
-let count = 0;
+// const letters = ["a", "b", "e", "g", "i", "k", "o"];
+// let count = 0;
 
-letters.forEach((letters) => {
-  if ("aeiou".includes(letters)) {
-    count++;
+// letters.forEach((letters) => {
+//   if ("aeiou".includes(letters)) {
+//     count++;
+//   }
+// });
+// console.log(count); // 4
+
+// --------------------------------------------------------
+// Find the largest number
+const nums = [15, 45, 8, 90, 12];
+
+let largest = nums[0];
+nums.forEach((nums) => {
+  if (nums > largest) {
+    largest = nums;
   }
 });
-console.log(count); // 4
+console.log(largest) // 90
