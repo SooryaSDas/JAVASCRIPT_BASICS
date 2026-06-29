@@ -45,10 +45,16 @@ freshfruits.forEach((fruits,index)=>{
 
 
 // Print square of each number
-const nums = [2, 4, 6, 8];
-nums.forEach((num) => console.log(num * num));
+// const nums = [2, 4, 6, 8];
+// nums.forEach((num) => console.log(num * num));
 
 
 // Print only even numbers
-const nums = [11, 20, 15, 40, 7, 60];
-nums.forEach((num)=> console.log(num %2 == 0 ? num : '')) // 20 40 60
+// const nums = [11, 20, 15, 40, 7, 60];
+// nums.forEach((num)=> console.log(num %2 == 0 ? num : '')) // 20 40 60
+
+
+// Print only names longer than 4 letters
+const names = ["Ram", "Joseph", "Asha", "Alexander", "Tom"];
+
+names.forEach((name) => name.length > 4 ? console.log(name) : ''); // Joseph Alexander
