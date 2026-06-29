@@ -23,7 +23,11 @@ name.forEach((obj) => {
 
 
 const fruits = ["apple", "banana", "orange", "grapes"];
-fruits.forEach((fruitess, index, array)=>{
-    console.log(fruitess, index, array);
+let fruitLog = fruits.forEach((fruitess, index, array)=>{
+    console.log(fruitess, index, array); //apple 0 [ 'apple', 'banana', 'orange', 'grapes' ]
+                                        // banana 1 [ 'apple', 'banana', 'orange', 'grapes' ]
+                                        //orange 2 [ 'apple', 'banana', 'orange', 'grapes' ]
+                                        //grapes 3 [ 'apple', 'banana', 'orange', 'grapes' ]
 })
 
+console.log(fruitLog); // undefined - foreach not return anything, it just iterate through the array and perform the operation on each element.
