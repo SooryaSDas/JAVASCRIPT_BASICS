@@ -55,13 +55,25 @@ freshfruits.forEach((fruits, index) => {
 // names.forEach((name) => name.length > 4 ? console.log(name) : ''); // Joseph Alexander
 
 // Find the sum
-const nums = [10, 20, 30, 40];
+// const nums = [10, 20, 30, 40];
 
-function findsum() {
-  let sum = 0;
-  nums.forEach((num) => {
-    sum += num;
+// function findsum() {
+//   let sum = 0;
+//   nums.forEach((num) => {
+//     sum += num;
+//   });
+//   console.log(sum);
+// }
+// findsum(); // 100
+
+// Find the average
+const marks = [70, 80, 90, 100];
+function findAverage() {
+  let total = 0;
+  marks.forEach((mark) => {
+    total += mark;
   });
-  console.log(sum);
+  let average = total / marks.length;
+  console.log(average);
 }
-findsum(); // 100
+findAverage();
