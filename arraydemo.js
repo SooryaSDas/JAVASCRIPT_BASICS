@@ -21,6 +21,9 @@ let num =[10,20,30,40,50];
 // console.log(num.splice(-2), num) //[ 40, 50 ] [ 10, 20, 30 ] - it calculate from end of the arry and start with 1
 // console.log(num.splice(-4,2), num) // [ 20, 30 ] [ 10, 40, 50 ] - it calculate from end of the arry and start with 1 and remove the next 2 elements
 
+let name = "soorya";
+// console.log(name.slice(0,2),name); // so soorya
+// console.log(name.slice(-3,-1)) // ry
 
 // console.log(num.splice(2, 1, 30), num) // [ 30 ] [ 10, 20, 30, 40, 50 ] - it calculate from start of the arry and start with 1 and remove the next 1 elements and add new element at that index
 // console.log(num.splice(5, 0, 60), num); // [] [ 10, 20, 30, 40, 50, 60 ]
@@ -31,9 +34,9 @@ let num =[10,20,30,40,50];
 // console.log(num.splice(1,1,80),num);// [ 20 ] [ 10, 80, 30, 40, 50 ]
 
 
-for(let i=0; i<num.length; i++){
-    console.log(num[i]);
-}
+// for(let i=0; i<num.length; i++){
+//     console.log(num[i]);
+// }
 
 // const fruits = ["Apple", "Orange"];
 
@@ -43,4 +46,4 @@ for(let i=0; i<num.length; i++){
 // multidimensional array
 const tickets = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
 tickets[1][1] = 1;
-console.log(tickets); // [ [ 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 0 ] ] 
+// console.log(tickets); // [ [ 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 0 ] ] 
