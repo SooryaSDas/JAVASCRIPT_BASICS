@@ -74,3 +74,15 @@ const addex = words3.map((word)=>{
 })
 // console.log(addex) //[ 'Hi!', 'Hello!', 'Welcome!' ]
 
+// Get only the names
+const users = [
+    {name:"John", age:22},
+    {name:"Alice", age:24},
+    {name:"Mark", age:30}
+];
+
+let namesonly = users.map((name)=>{
+    return name.name
+})
+// console.log(namesonly) //[ 'John', 'Alice', 'Mark' ]
+
