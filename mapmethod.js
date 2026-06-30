@@ -45,3 +45,10 @@ let wordlength = words.map((len)=>{
     return len.length
 })
 // console.log(wordlength) // [5, 6, 4]
+
+// Add "Mr." before every name
+const name = ["John", "David", "Alex"];
+let mr = name.map((mr)=>{
+    return 'Mr. '+mr
+})
+// console.log(mr) // [ 'Mr. John', 'Mr. David', 'Mr. Alex' ]
