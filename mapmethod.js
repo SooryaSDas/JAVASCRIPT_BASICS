@@ -86,3 +86,9 @@ let namesonly = users.map((name)=>{
 })
 // console.log(namesonly) //[ 'John', 'Alice', 'Mark' ]
 
+// Get only ages
+let onlyage = users.map((age)=>{
+    return age.age
+})
+// console.log(onlyage) //[ 22, 24, 30 ]
+
