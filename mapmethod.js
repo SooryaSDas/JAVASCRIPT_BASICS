@@ -52,3 +52,10 @@ let mr = name.map((mr)=>{
     return 'Mr. '+mr
 })
 // console.log(mr) // [ 'Mr. John', 'Mr. David', 'Mr. Alex' ]
+
+// Convert every word to lowercase
+const wordss = ["HELLO", "WORLD", "JAVASCRIPT"];
+let low = wordss.map((low)=>{
+    return low.toLowerCase()
+})
+// console.log(low) // [ 'hello', 'world', 'javascript' ]
