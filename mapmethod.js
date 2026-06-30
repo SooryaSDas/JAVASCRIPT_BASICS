@@ -92,3 +92,13 @@ let onlyage = users.map((age)=>{
 })
 // console.log(onlyage) //[ 22, 24, 30 ]
 
+// Replace all negative numbers with 0
+const neg = [12,-3,8,87,-9,-6,98,-5];
+const withzero = neg.map((zero)=>{
+    return zero > 0 ? zero : 0     
+})
+// console.log(withzero)
+// [
+//   12, 0,  8, 87,
+//    0, 0, 98,  0
+// ]
