@@ -38,3 +38,10 @@ let str = nums2.map((st)=>{
     return st.toString()
 })
 // console.log(str) //[ '10', '20', '30' ]
+
+// Find the length of every word
+const words = ["apple", "banana", "kiwi"];
+let wordlength = words.map((len)=>{
+    return len.length
+})
+// console.log(wordlength) // [5, 6, 4]
