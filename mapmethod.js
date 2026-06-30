@@ -59,3 +59,11 @@ let low = wordss.map((low)=>{
     return low.toLowerCase()
 })
 // console.log(low) // [ 'hello', 'world', 'javascript' ]
+
+// Reverse every word
+const wor = ["cat", "dog", "apple"];
+const rev = wor.map((rev)=>{
+    return rev.split("").reverse().join("");
+})
+// console.log(rev); //[ 'tac', 'god', 'elppa' ]
+
