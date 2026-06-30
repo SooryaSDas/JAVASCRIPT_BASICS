@@ -18,4 +18,14 @@ const nums3 = [25, 80, 45, 90, 60];
 let greate = nums3.filter((nums)=>{
    return nums > 50 
 })
-console.log(greate) //[ 80, 90, 60 ]
+// console.log(greate) //[ 80, 90, 60 ]
+
+// Filter active users
+const users = [
+    { name: "John", active: true },
+    { name: "Alice", active: false },
+    { name: "David", active: true }
+];
+
+let user = users.filter(users=> users.active).map(users=> users.name);
+console.log(user)
