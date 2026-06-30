@@ -67,3 +67,10 @@ const rev = wor.map((rev)=>{
 })
 // console.log(rev); //[ 'tac', 'god', 'elppa' ]
 
+// Add an exclamation mark
+const words3 = ["Hi", "Hello", "Welcome"];
+const addex = words3.map((word)=>{
+    return word+"!"
+})
+// console.log(addex) //[ 'Hi!', 'Hello!', 'Welcome!' ]
+
