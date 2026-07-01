@@ -46,3 +46,11 @@ let negative = nums5.reduce((acc,num)=>{
     return num < acc ? acc+1 : acc
 },0)
 // console.log(negative) //2
+
+// Count even numbers
+const nums6 = [10, 11, 12, 13, 14];
+let even = nums6.reduce((acc,num)=>{
+    return num %2 ==0 ? acc+1 : acc
+},0)
+// console.log(even) // 3
+
