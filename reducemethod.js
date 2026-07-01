@@ -125,3 +125,9 @@ let vowels = str.split('').reduce((acc,char)=>{
 // console.log(vowels) // 3
 
 
+// Reverse a string
+const str2 = "Hello";
+let reversed = str2.split('').reduce((acc,char)=>{
+    return char + acc;
+}, '')
+console.log(reversed) // "olleH" 
