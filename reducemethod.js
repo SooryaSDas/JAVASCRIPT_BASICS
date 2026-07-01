@@ -97,3 +97,4 @@ let active = users.reduce((acc,user)=>{
     return user.active == true ? acc+1 : acc
 },0);
 // console.log(active) // 2
+
