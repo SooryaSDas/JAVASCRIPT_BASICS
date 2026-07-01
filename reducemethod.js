@@ -117,3 +117,11 @@ let count1 = str1.split('').reduce((acc)=>{
 },0)
 // console.log(count1) // 10
 
+// Count vowels
+const str = "Programming";
+let vowels = str.split('').reduce((acc,char)=>{
+    return "aeiouAEIOU".includes(char) ? acc + 1 : acc;
+},0)
+// console.log(vowels) // 3
+
+
