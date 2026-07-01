@@ -65,5 +65,13 @@ const sumeven = nums7.reduce((acc,num)=>{
 const odd = nums7.reduce((acc,num)=>{
     return num%2 !==0 ? num+acc : acc
 },0)
-console.log(odd) //24
+// console.log(odd) //24
 
+
+// Find average
+const marks = [70, 80, 90, 100];
+const avg = marks.reduce((acc,num)=>{
+    return acc+num/marks.length
+},0)
+
+// console.log(avg) // 85
