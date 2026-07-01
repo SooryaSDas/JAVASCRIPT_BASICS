@@ -61,3 +61,9 @@ const sumeven = nums7.reduce((acc,num)=>{
 },0)
 // console.log(sumeven) //36
 
+// Sum only odd numbers
+const odd = nums7.reduce((acc,num)=>{
+    return num%2 !==0 ? num+acc : acc
+},0)
+console.log(odd) //24
+
