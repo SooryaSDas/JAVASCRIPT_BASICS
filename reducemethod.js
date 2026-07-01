@@ -18,3 +18,11 @@ let large = nums2.reduce((acc, num)=>{
     return num > acc ? num : acc;
 })
 // console.log(large) //89
+
+// Find the smallest number
+const nums3 = [12, 45, 7, 89, 23];
+let small = nums3.reduce((acc,num)=>{
+    return acc < num ? acc : num
+})
+// console.log(small) //7
+
