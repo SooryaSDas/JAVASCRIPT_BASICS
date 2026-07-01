@@ -26,3 +26,9 @@ let small = nums3.reduce((acc,num)=>{
 })
 // console.log(small) //7
 
+// Count total elements
+const fruits = ["Apple", "Banana", "Orange", "Mango"];
+let count = fruits.reduce((acc)=>{
+    return acc + 1
+},0)
+// console.log(count) //4
