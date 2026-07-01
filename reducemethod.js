@@ -32,3 +32,11 @@ let count = fruits.reduce((acc)=>{
     return acc + 1
 },0)
 // console.log(count) //4
+
+// Count positive numbers
+const nums4 = [-2, 5, -1, 8, 10];
+let positive = nums4.reduce((acc,num)=>{
+    return num > acc ?  acc+1 : acc
+},0)
+// console.log(positive) //3
+
