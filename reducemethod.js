@@ -13,4 +13,8 @@ let value1 = nums1.reduce((acc,nums)=>{
 //  console.log(value1) //24
 
 // Find the largest number
-
+const nums2 = [12, 45, 7, 89, 23];
+let large = nums2.reduce((acc, num)=>{
+    return num > acc ? num : acc;
+})
+// console.log(large) //89
