@@ -40,3 +40,9 @@ let positive = nums4.reduce((acc,num)=>{
 },0)
 // console.log(positive) //3
 
+// Count negative numbers
+const nums5 = [-2, 5, -1, 8, 10];
+let negative = nums5.reduce((acc,num)=>{
+    return num < acc ? acc+1 : acc
+},0)
+// console.log(negative) //2
