@@ -85,4 +85,15 @@ const employees = [
 let total = employees.reduce((acc,employee)=>{
     return employee.salary + acc
 },0)
-console.log(total) // 110000
+// console.log(total) // 110000
+
+// Count active users
+const users = [
+    { name: "John", active: true },
+    { name: "Alice", active: false },
+    { name: "David", active: true }
+];
+let active = users.reduce((acc,user)=>{
+    return user.active == true ? acc+1 : acc
+},0);
+// console.log(active) // 2
