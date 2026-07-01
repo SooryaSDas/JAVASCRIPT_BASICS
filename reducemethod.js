@@ -54,3 +54,10 @@ let even = nums6.reduce((acc,num)=>{
 },0)
 // console.log(even) // 3
 
+// Sum only even numbers
+const nums7 = [10, 11, 12, 13, 14];
+const sumeven = nums7.reduce((acc,num)=>{
+    return num%2 ==0 ? acc+=num : acc
+},0)
+// console.log(sumeven) //36
+
