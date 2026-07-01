@@ -98,3 +98,15 @@ let active = users.reduce((acc,user)=>{
 },0);
 // console.log(active) // 2
 
+// Get total quantity
+const cart = [
+    { item: "Pen", qty: 2 },
+    { item: "Book", qty: 3 },
+    { item: "Bag", qty: 1 }
+];
+let quality = cart.reduce((acc,quality)=>{
+    return quality.qty+acc
+},0)
+// console.log(quality) // 6
+
+//  Count characters
