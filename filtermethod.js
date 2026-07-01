@@ -28,4 +28,14 @@ const users = [
 ];
 
 let user = users.filter(users=> users.active).map(users=> users.name);
-console.log(user)
+// console.log(user)
+
+
+// indexof num
+let numvalue = [1,2,3,4,5,1];
+
+let values = numvalue.filter((num,index)=>{
+    // return numvalue.indexOf(num)  //[ 2, 3, 4, 5 ]
+    return numvalue.indexOf(num) === index 
+})
+ console.log(values) // //[ 1, 2, 3, 4, 5 ]
