@@ -75,3 +75,14 @@ const avg = marks.reduce((acc,num)=>{
 },0)
 
 // console.log(avg) // 85
+
+// Total salary
+const employees = [
+    { name: "John", salary: 30000 },
+    { name: "Alice", salary: 45000 },
+    { name: "David", salary: 35000 }
+];
+let total = employees.reduce((acc,employee)=>{
+    return employee.salary + acc
+},0)
+console.log(total) // 110000
