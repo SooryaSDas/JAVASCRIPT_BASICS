@@ -109,4 +109,11 @@ let quality = cart.reduce((acc,quality)=>{
 },0)
 // console.log(quality) // 6
 
+
 //  Count characters
+const str1 = "JavaScript";
+let count1 = str1.split('').reduce((acc)=>{
+    return acc+1
+},0)
+// console.log(count1) // 10
+
