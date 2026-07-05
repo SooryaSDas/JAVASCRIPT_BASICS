@@ -1,0 +1,9 @@
+.header{
+    text-align: center;
+}
+.course-title{
+    background: #d9c785;
+    padding: 15px;
+    width: 300px;
+    border-radius: 20px;
+}
