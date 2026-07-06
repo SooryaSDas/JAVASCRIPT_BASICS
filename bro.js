@@ -65,7 +65,7 @@ function getTopRatedCourse(course) {
 
 function topratedcourse(arr) {
   const topratedcourse = getTopRatedCourse(arr);
-  console.log(topratedcourse);
+  // console.log(topratedcourse);
   const courseUI = `<div class="course-title">
    <h3>Course Name: ${formateName(topratedcourse.name)}</h3>
    <p> Price : ${topratedcourse.price}</p>
@@ -79,4 +79,28 @@ function topratedcourse(arr) {
 }
 topratedcourse(course);
 
+function getLeastCourse(course){
+  let least = course.reduce((leastcourse,course)=>{
+    return leastcourse.rating < course.rating ? leastcourse : course;
+  });
+  return least;
+}
+
+function displayleastcourse(arr){
+  let leastcourse = getLeastCourse(arr);
+  // console.log(leastcourse);
+  const courseUI = `<div class="course-title">
+   <h3>Course Name: ${formateName(leastcourse.name)}</h3>
+   <p> Price : ${leastcourse.price}</p>
+   <p> Rating : ${Math.round(leastcourse.rating * 10) / 10}</p>
+   <p> Available : ${leastcourse.isAvailable ? "Yes" : "No"}</p>
+   <p> Languages : ${leastcourse.languages.join(", ")}</p>
+   <p> Mentor : ${formateName(leastcourse.mentor.name)} (${leastcourse.mentor.phone})</p>
+  </div>`;
+  const leastratedCourse = document.getElementById("least-rated-courses");
+  console.log(leastcourse);
+leastratedCourse.innerHTML = courseUI;
+}
+
+displayleastcourse(course);
 
