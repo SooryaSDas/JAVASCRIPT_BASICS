@@ -78,3 +78,5 @@ function topratedcourse(arr) {
   topcourse.innerHTML = courseUI;
 }
 topratedcourse(course);
+
+
