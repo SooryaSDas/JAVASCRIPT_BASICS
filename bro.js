@@ -102,10 +102,26 @@ function displayleastcourse(arr) {
   leastratedCourse.innerHTML = courseUI;
 }
 
+function getSearchResult(arr,query){
+// console.log("query"+query);
+  let result = arr.filter((course)=>{
+    return course.name.includes(query);
+  });
+  return result;
+  console.log(result);
+  displayCourse(result);
+}
+
 function initialpage() {
   displaycount();
   displayCourse();
   topratedcourse(course);
   displayleastcourse(course);
+   const searchInput = document.querySelector("#search-input");
+  searchInput.addEventListener("input",(event)=>{
+    getSearchResult(course, event.target.value);
+  })
 }
 initialpage();
+
+
