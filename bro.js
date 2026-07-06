@@ -51,10 +51,11 @@ function displayCourse() {
     courseContainer.innerHTML += courseUI;
   });
 }
-displayCourse();
 
-document.getElementById("course-count").innerText =
-  `Total Courses: ${course.length}`;
+function displaycount() {
+  let coursecount = (document.getElementById("course-count").innerText =
+    `Total Courses: ${course.length}`);
+}
 
 function getTopRatedCourse(course) {
   let topRatedCourse = course.reduce((topcourse, currentcourse) => {
@@ -77,16 +78,15 @@ function topratedcourse(arr) {
   const topcourse = document.getElementById("top-rated-courses");
   topcourse.innerHTML = courseUI;
 }
-topratedcourse(course);
 
-function getLeastCourse(course){
-  let least = course.reduce((leastcourse,course)=>{
+function getLeastCourse(course) {
+  let least = course.reduce((leastcourse, course) => {
     return leastcourse.rating < course.rating ? leastcourse : course;
   });
   return least;
 }
 
-function displayleastcourse(arr){
+function displayleastcourse(arr) {
   let leastcourse = getLeastCourse(arr);
   // console.log(leastcourse);
   const courseUI = `<div class="course-title">
@@ -99,8 +99,13 @@ function displayleastcourse(arr){
   </div>`;
   const leastratedCourse = document.getElementById("least-rated-courses");
   console.log(leastcourse);
-leastratedCourse.innerHTML = courseUI;
+  leastratedCourse.innerHTML = courseUI;
 }
 
-displayleastcourse(course);
-
+function initialpage() {
+  displaycount();
+  displayCourse();
+  topratedcourse(course);
+  displayleastcourse(course);
+}
+initialpage();
