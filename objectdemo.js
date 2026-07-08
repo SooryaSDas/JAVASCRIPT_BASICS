@@ -32,5 +32,12 @@ const student = {
 }
 
 // console.log(student) // { name: 'ami', age: 24, greet: [Function: greet] }
- console.log(student.greet) // [Function: greet]
-  console.log(student.greet())  // hi
+//  console.log(student.greet) // [Function: greet]
+//   console.log(student.greet())  // hi
+
+// for in loop
+
+for (let key in student){
+    console.log(student[key]) // ami 24 [Function: greet]
+}
+
