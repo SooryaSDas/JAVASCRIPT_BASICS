@@ -32,3 +32,5 @@ const student = {
 }
 
 // console.log(student) // { name: 'ami', age: 24, greet: [Function: greet] }
+ console.log(student.greet) // [Function: greet]
+  console.log(student.greet())  // hi
