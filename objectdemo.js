@@ -37,7 +37,14 @@ const student = {
 
 // for in loop
 
-for (let key in student){
-    console.log(student[key]) // ami 24 [Function: greet]
-}
+// for (let key in student){
+//     console.log(student[key]) // ami 24 [Function: greet]
+// }
 
+
+let salary = {a:100, b:200, c:300};
+let sum = 0
+for (let key in salary){
+    sum += salary[key]
+}
+console.log(sum) // 600
