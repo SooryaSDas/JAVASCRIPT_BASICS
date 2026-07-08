@@ -47,4 +47,8 @@ let sum = 0
 for (let key in salary){
     sum += salary[key]
 }
-console.log(sum) // 600
+// console.log(sum) // 600
+
+console.log(salary.hasOwnProperty("a")) // true
+
+console.log(salary.hasOwnProperty("d")) // false
