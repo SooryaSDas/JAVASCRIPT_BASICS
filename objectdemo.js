@@ -64,3 +64,4 @@ for (let key in salary){
 // entries
 console.log(Object.entries(salary)) // [ [ 'a', 100 ], [ 'b', 200 ], [ 'c', 300 ] ]
 
+ 
