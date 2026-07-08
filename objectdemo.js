@@ -54,3 +54,6 @@ for (let key in salary){
 // console.log(salary.hasOwnProperty("d")) // false
 // console.log("e" in salary) // false
 
+
+console.log(Object.values(salary)) // [ 100, 200, 300 ]
+console.log(Object.values(salary).reduce((acc,value)=> acc + value)) // 600
