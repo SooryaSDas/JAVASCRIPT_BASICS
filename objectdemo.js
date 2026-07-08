@@ -59,4 +59,8 @@ for (let key in salary){
 // console.log(Object.values(salary).reduce((acc,value)=> acc + value)) // 600
 
 // keys
-console.log(Object.keys(salary)); // [ 'a', 'b', 'c' ]
+// console.log(Object.keys(salary)); // [ 'a', 'b', 'c' ]
+
+// entries
+console.log(Object.entries(salary)) // [ [ 'a', 100 ], [ 'b', 200 ], [ 'c', 300 ] ]
+
