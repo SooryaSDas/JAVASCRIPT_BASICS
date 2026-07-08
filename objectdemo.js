@@ -15,8 +15,20 @@ const obj = {
 // console.log(obj); // { name: 'soorya', age: 24 }
 
 // computed property
-let a = "value";
+// let a = "value";
 // let b = {a: "hello"};
 // console.log(b); // { a: 'hello' }
 // let b = {[a]: "hello"};
-console.log(b) // { value: 'hello' }
+// console.log(b) // { value: 'hello' }
+
+let name = "ami";
+let age = 24;
+const student = {
+    name,
+    age,
+    greet(){
+        return "hi";
+    }
+}
+
+// console.log(student) // { name: 'ami', age: 24, greet: [Function: greet] }
