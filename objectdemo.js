@@ -62,6 +62,15 @@ for (let key in salary){
 // console.log(Object.keys(salary)); // [ 'a', 'b', 'c' ]
 
 // entries
-console.log(Object.entries(salary)) // [ [ 'a', 100 ], [ 'b', 200 ], [ 'c', 300 ] ]
+// console.log(Object.entries(salary)) // [ [ 'a', 100 ], [ 'b', 200 ], [ 'c', 300 ] ]
 
- 
+// assign
+console.log(Object.assign({}, salary,student))
+ {
+  a: 100,
+  b: 200,
+  c: 300,
+  name: 'ami',
+  age: 24,
+  greet: [Function: greet]
+}
