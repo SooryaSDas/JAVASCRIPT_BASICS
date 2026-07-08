@@ -87,7 +87,7 @@ let result = Object.assign({}, salary,student)
 // } { name: 'ami', age: 24, greet: [Function: greet] }
 
 let result2 = Object.assign(salary,student)
-console.log(result)
+// console.log(result)
 // {
 //   a: 100,
 //   b: 200,
@@ -103,3 +103,19 @@ console.log(result)
 //   age: 24,
 //   greet: [Function: greet]
 // }
+
+// freeze() and seal()
+
+// freeze() - no changes, can't add new properties
+let valuess = {name : "soorya", age : 25, place: "attingal"};
+Object.freeze(valuess);
+let change = valuess.age = 20;
+let add = valuess.space = "new"
+// console.log(valuess); // { name: 'soorya', age: 25, place: 'attingal' }
+
+//seal() = 
+let values1 = {name : "soorya", age : 25, place: "attingal"};
+Object.seal(values1);
+let chanes = values1.age=20;
+let adding = valuess.space = "new"
+console.log(values1) // { name: 'soorya', age: 20, place: 'attingal' }
