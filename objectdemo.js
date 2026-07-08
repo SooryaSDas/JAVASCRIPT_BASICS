@@ -64,13 +64,25 @@ for (let key in salary){
 // entries
 // console.log(Object.entries(salary)) // [ [ 'a', 100 ], [ 'b', 200 ], [ 'c', 300 ] ]
 
-// assign
-console.log(Object.assign({}, salary,student))
- {
-  a: 100,
-  b: 200,
-  c: 300,
-  name: 'ami',
-  age: 24,
-  greet: [Function: greet]
-}
+// assign = object.assing() used to combine 2 object
+// console.log(Object.assign({}, salary,student))
+//  {
+//   a: 100,
+//   b: 200,
+//   c: 300,
+//   name: 'ami',
+//   age: 24,
+//   greet: [Function: greet]
+// }
+
+let result = Object.assign({}, salary,student)
+console.log(result,student)
+// {
+//   a: 100,
+//   b: 200,
+//   c: 300,
+//   name: 'ami',
+//   age: 24,
+//   greet: [Function: greet]
+// } { name: 'ami', age: 24, greet: [Function: greet] }
+
