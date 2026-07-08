@@ -113,9 +113,10 @@ let change = valuess.age = 20;
 let add = valuess.space = "new"
 // console.log(valuess); // { name: 'soorya', age: 25, place: 'attingal' }
 
-//seal() = 
+//seal() = we can change the values of existing properties but we can't add or remove the key and values
 let values1 = {name : "soorya", age : 25, place: "attingal"};
 Object.seal(values1);
 let chanes = values1.age=20;
-let adding = valuess.space = "new"
+let adding = values1.space = "new"
+delete values1.age;
 console.log(values1) // { name: 'soorya', age: 20, place: 'attingal' }
