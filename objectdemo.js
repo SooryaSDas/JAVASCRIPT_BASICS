@@ -76,7 +76,7 @@ for (let key in salary){
 // }
 
 let result = Object.assign({}, salary,student)
-console.log(result,student)
+// console.log(result,student)
 // {
 //   a: 100,
 //   b: 200,
@@ -86,3 +86,20 @@ console.log(result,student)
 //   greet: [Function: greet]
 // } { name: 'ami', age: 24, greet: [Function: greet] }
 
+let result2 = Object.assign(salary,student)
+console.log(result)
+// {
+//   a: 100,
+//   b: 200,
+//   c: 300,
+//   name: 'ami',
+//   age: 24,
+//   greet: [Function: greet]
+// } {
+//   a: 100,
+//   b: 200,
+//   c: 300,
+//   name: 'ami',
+//   age: 24,
+//   greet: [Function: greet]
+// }
