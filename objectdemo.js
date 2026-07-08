@@ -49,6 +49,8 @@ for (let key in salary){
 }
 // console.log(sum) // 600
 
-console.log(salary.hasOwnProperty("a")) // true
+// console.log(salary.hasOwnProperty("a")) // true
 
-console.log(salary.hasOwnProperty("d")) // false
+// console.log(salary.hasOwnProperty("d")) // false
+// console.log("e" in salary) // false
+
