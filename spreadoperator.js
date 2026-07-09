@@ -17,6 +17,8 @@ const data = {key : 10};
 const key = data.key=5;
 // console.log(key, data) // 5 { key: 5 }
 
+
+// shallow copy
 const user = {address: {place: "attingal"}};
 const copy1 = JSON.stringify(user);
 const result = JSON.parse(copy1);
